@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Salon</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        .body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .blackBg {
+            background-color: black;
+            width: 100%;
+            height: 125px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: last baseline;
+            
+        }
+        .pic {
+            width: 116px;
+            height: 116px;
+            border-radius: 50%;
+            z-index: 2;
+            position: absolute;
+            top: 58px;
+            
+        }
+        .title {
+            color: black;
+            font-family: inter;
+            font-size: 28px;
+            font-weight: bold;
+            text-align:  center;
+            z-index: 3;
+            position: relative;
+            top: 191px;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            
+        }
+        .container {
+            max-width: 470px;
+            margin: 0 auto;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 0px solid #ddd;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            top: 257px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-family: inter;
+            
+        }
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: #ddd;
+            position: absolute;
+            top: 316px;
+            margin-top: 7px;
+        }
+        .orders {
+            position: absolute;
+            top: 352px;
+            justify-self: center;
+            height: 68px;
+            width: 454px;
+        }
+        .order-status {
+            display: flex;
+            justify-content: space-between;
+            
+            
+            
+        }
+        .order-status button {
+            width: 159px;
+            height: 68px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            background: none;
+            cursor: pointer;
+            top: 23px;
+            left: 44px;
+            margin-right: 10px;
+            margin-left: 10px;
+
+ 
+            font-size: 13px;
+
+            z-index: 10;
+            border-radius:40px;
+        }
+        .order-status .active {
+            background-color: black;
+            color: white;
+
+        }
+        .order-card {
+            position: absolute;
+            top: 452px;
+            width: 470px;
+            height: 580px;
+            
+            border-radius: 10px;
+        }
+        .order-card-black {
+            margin-bottom: 20px;
+            top: 0;
+            left: 0;
+            width: 470px;
+            height: 131px;
+            box-sizing: border-box;
+            background-color: black;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .order-card-blue {
+            margin-bottom: 20px;
+            top: 0;
+            left: 0;
+            width: 470px;
+            height: 131px;
+            box-sizing: border-box;
+            background-color: #44566E;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .order-card .avatar {
+            background-color: #c9d431;
+            color: black;
+            font-size: 1.5em;
+            font-family: inter;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 86px;
+            height: 86px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .name {
+            font-size: 20px;
+            font-family: inter;
+            font-weight: bold;
+            color: white;
+            margin-left: 10px;
+            text-align: left;
+        }
+        .date {
+            margin-top: 7px;
+            font-size: 14px;
+            font-family: inter;
+            color: white;
+            margin-left: 10px;
+            text-align: left;
+        }
+        .order-price {
+            font-size: 20px;
+            font-family: inter;
+            font-weight: bold;
+            width: 117px;
+            height: 36px;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            background-color: #D7FC51;
+            color: black;
+            margin-left: 100px;
+            border-radius: 5px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="blackBg">
+        <img class="pic" src="C:\Faizan\Projects\project 0.1\sample.jpeg" alt="logo">
+        
+    </div>
+    <div class="container">
+    <h1 class="title">Signature Men Salon & Spa</h1>
+    <div class="nav">
+        <a href="#">DASHBOARD</a>
+        <a style="font-weight: bold;" href="#">ORDERS</a>
+        <a href="#">CUSTOMERS</a>
+        <a href="#">SETTINGS</a>
+    </div>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="orders">
+            <div class="order-status">
+                <button class="active">All Orders</button>
+                <button>Approved</button>
+                <button>Declined</button>
+            </div>
+        </div>
+        <div class="order-card">
+            <div class="order-card-black">
+                <div class="avatar">H</div>
+                <div class="order-info">
+                    <div class="name">HASSAAN</div>
+                    <div class="date">July 06, 2023<br>09:44 AM</div>
+                </div>
+                <div class="order-price">PKR 6470</div>
+            </div>
+            <div class="order-card-black">
+                <div class="avatar">O</div>
+                <div class="order-info">
+                    <div class="name">Owais</div>
+                    <div class="date">July 06, 2023<br>10:32 AM</div>
+                </div>
+                <div class="order-price">PKR 8970</div>
+            </div>
+            <div class="order-card-blue">
+                <div class="avatar">W</div>
+                <div class="order-info">
+                    <div class="name">Wahaj</div>
+                    <div class="date">July 06, 2023<br>10:32 AM</div>
+                </div>
+                <div class="order-price">PKR 750</div>
+            </div>
+            <div class="order-card-blue">
+                <div class="avatar">R</div>
+                <div class="order-info">
+                    <div class="name">Rashid</div>
+                    <div class="date">July 06, 2023<br>10:32 AM</div>
+                </div>
+                <div class="order-price">PKR 1245</div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
