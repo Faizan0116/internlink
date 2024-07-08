@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Salon</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .blackBg {
+            background-color: black;
+            width: 100%;
+            height: 125px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .pic {
+            width: 116px;
+            height: 116px;
+            border-radius: 50%;
+            position: absolute;
+            top: 58px;
+        }
+        .title {
+            color: black;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin: 80px 0 20px 0;
+        }
+        .container {
+            max-width: 470px;
+            margin: 0 auto;
+            background-color: white;
+            text-align: center;
+            padding: 0 15px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            
+        }
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        .orders {
+            margin-top: 20px;
+        }
+        .order-status {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 36px;
+            margin-top: 36px;
+        }
+        .order-status button {
+            width: 159px;
+            height: 68px;
+            border: 2px solid black;
+            background: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 40px;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+        .order-status .active {
+            background-color: black;
+            color: white;
+        }
+        .order-card {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .order-card-black {
+            background-color: black;
+            color: white;
+        }
+        .order-card-blue {
+            background-color: #44566E;
+            color: white;
+        }
+        .order-card .avatar {
+            background-color: #c9d431;
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 86px;
+            height: 86px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+        .order-info {
+            flex: 1;
+            text-align: left;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .date {
+            margin-top: 7px;
+            font-size: 14px;
+        }
+        .order-price {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #D7FC51;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .order-card-inner {
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .order-status button {
+                width: 30%;
+                height: 40px;
+                font-size: 12px;
+            }
+            .order-card .avatar {
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+            }
+            .order-price {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .order-status button {
+                width: 25%;
+                margin-bottom: 10px;
+            }
+            /* .order-card-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            } */
+            .order-card .avatar {
+                margin-bottom: 10px;
+            }
+            .nav a{
+                font-size: 80%;
+            }
+            .title{
+                font-size: 24px;
+            }
+            .order-status button {
+            width: 159px;
+            height: 68px;
+            border: 2px solid black;
+            background: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 40px;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="blackBg">
+        <img class="pic" src="sample.jpeg" alt="logo">
+    </div>
+    <div class="container">
+        <h1 class="title">Signature Men Salon & Spa</h1>
+        <div class="nav">
+            <a href="#">DASHBOARD</a>
+            <a style="font-weight: bold;" href="#">ORDERS</a>
+            <a href="#">CUSTOMERS</a>
+            <a href="#">SETTINGS</a>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="orders">
+            <div class="order-status">
+                <button class="active">All Orders</button>
+                <button>Approved</button>
+                <button>Declined</button>
+            </div>
+        </div>
+        <div class="order-card order-card-black">
+            <div class="order-card-inner">
+                <div class="avatar">H</div>
+                <div class="order-info">
+                    <div class="name">HASSAAN</div>
+                    <div class="date">July 06, 2023<br>09:44 AM</div>
+                </div>
+                <div class="order-price">PKR 6470</div>
+            </div>
+        </div>
+        <div class="order-card order-card-black">
+            <div class="order-card-inner">
+                <div class="avatar">O</div>
+                <div class="order-info">
+                    <div class="name">Owais</div>
+                    <div class="date">July 06, 2023<br>10:32 AM</div>
+                </div>
+                <div class="order-price">PKR 8970</div>
+            </div>
+        </div>
+        <div class="order-card order-card-blue">
+            <div class="order-card-inner">
+                <div class="avatar">W</div>
+                <div class="order-info">
+                    <div class="name">Wahaj</div>
+                    <div class="date">July 06, 2023<br>10:32 AM</div>
+                </div>
+                <div class="order-price">PKR 750</div>
+            </div>
+        </div>
+        <div class="order-card order-card-blue">
+            <div class="order-card-inner">
+                <div class="avatar">R</div>
+                <div class="order-info">
+                    <div class="name">Rashid</div>
+                    <div class="date">July 06, 2023<br>10:32 AM</div>
+                </div>
+                <div class="order-price">PKR 1245</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
