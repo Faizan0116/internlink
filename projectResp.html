@@ -88,6 +88,7 @@
             margin-bottom: 20px;
             padding: 15px;
             border-radius: 3px;
+            cursor: pointer;
         }
         .order-card-black {
             background-color: black;
@@ -385,7 +386,7 @@
                 <button>Declined</button>
             </div>
         </div>
-        <div class="order-card order-card-black">
+        <div class="order-card order-card-black" id="card2" >
             <div class="order-card-inner">
                 <div class="avatar">H</div>
                 <div class="order-info">
@@ -395,7 +396,7 @@
                 <div class="order-price">PKR 6470</div>
             </div>
         </div>
-        <div class="order-card order-card-black">
+        <div class="order-card order-card-black" id="card1" >
             <div class="order-card-inner">
                 <div class="avatar">O</div>
                 <div class="order-info">
@@ -429,10 +430,25 @@
 
     <script>
         function myFunction() {
-          document.getElementById("demo").style.height = "25px"; 
-          document.getElementById("demo").style.color = "red";
-          document.getElementById("demo").style.backgroundColor = "yellow";        
+          document.getElementById("demo").style.height = "509px"; 
+          
+                 
         }
+            const card1 = document.getElementById('card1');
+            const card2 = document.getElementById('card2');
+            let prevHeightCard1 = card1.clientHeight;
+            let prevHeightCard2 = card2.clientHeight;
+
+            card1.addEventListener('click', () => {
+                card1.style.height = '450px'; // Set desired height
+                card2.style.height = '100px'; // Reset other card's height
+            });
+
+            card2.addEventListener('click', () => {
+                card2.style.height = '200px'; // Set desired height
+                card1.style.height = '100px'; // Reset other card's height
+            });
+        
         </script>
 
 </body>
